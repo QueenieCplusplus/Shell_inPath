@@ -37,7 +37,7 @@ Script
 	{
 	 var=$1
 	 if [ "$var" != ""] ; then
-	    if [ "${var:0:1}" = "/" ] ; then
+	    if [ "${var:0:1}" = "/" ] ; then  # (a)
 		if [ ! -x $var ] ; then
 		  return 1
 	        fi
@@ -48,5 +48,11 @@ Script
         }
 
 Syntax
+
+* (a) 變數切割法 ${var:0:1} 
+
+判斷第一字元是否為 /
+
+此為從字串中取得子字串的一種簡寫方法，並且從指定的位移值開始取得指定長度的字元，如未指定限制長度，即回傳位移值後的所有字元。
 
 (to be continued...)
