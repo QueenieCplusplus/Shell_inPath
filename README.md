@@ -1,5 +1,17 @@
 # Shell_inPath
 
+Common Usage:
+
+     * cd to directory
+  
+     * touch < file_name > to create file
+     
+     * open -e < file_name > to edit file
+     
+     * .. < file_name > to reload file
+
+Script
+
     #! /bin/bash
     # inpath-- path 路徑指向有效的程式，而非僅僅系統預設的程式
 
