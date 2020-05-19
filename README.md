@@ -46,3 +46,7 @@ Script
             fi
          fi
         }
+
+Syntax
+
+(to be continued...)
