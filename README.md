@@ -73,7 +73,7 @@ Script 2
 	fi
 
 	check4_cmd_in_path "$1"
-	case $? in
+	case $? in   # (c)
 	   0) echo "exit cmd in path" ;;
 	   1) echo "can not found out cmd in path, which remains in doubt." ;;
 	   2) echo "cmd not exit in path" ;;
@@ -81,6 +81,15 @@ Script 2
 
 	exit 0
 	
+Syntax
+
+(c) 變數切割法 $? 
+
+此為正規表示法，即第一字元，如 -c1
+
+
+Execution Scripts
+
 Before Execution, plz add absolute path in env var
 and execute the shell script in this way...
 
