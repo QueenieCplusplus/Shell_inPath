@@ -95,7 +95,9 @@
 
    符合比對模板的內容之後遺留下來的結果。
    
-  * (f) 
+  * (f) -ne
+  
+	     (to be continued...)
 
 * Execution Scripts
 
