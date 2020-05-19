@@ -1,6 +1,6 @@
 # Shell_inPath
 
-Common Usage:
+* Common Usage:
 
      * cd to directory
   
@@ -10,7 +10,7 @@ Common Usage:
      
      * .. < file_name > to reload file
 
-Script 1
+* Script 1
 
     #! /bin/bash
     # inpath-- path 路徑指向有效的程式，而非僅僅系統預設的程式
@@ -47,23 +47,23 @@ Script 1
          fi
         }
 
-Syntax
+* Syntax
 
-(a) 變數切割法 ${var:0:1} 
+   * (a) 變數切割法 ${var:0:1} 
 
-the actual grammar is : ${var:start:size} 變數切分方式
+    the actual grammar is : ${var:start:size} 變數切分方式
 
-判斷第一字元是否為 /
+    判斷第一字元是否為 /
 
-此為從字串中取得子字串的一種簡寫方法，並且從指定的位移值開始取得指定長度的字元，如未指定限制長度，即回傳位移值後的所有字元。
+     此為從字串中取得子字串的一種簡寫方法，並且從指定的位移值開始取得指定長度的字元，如未指定限制長度，即回傳位移值後的所有字元。
 
-解決一個問題有很多方法，例如 $(echo $var | cut c1)
+    解決一個問題有很多方法，例如 $(echo $var | cut c1)
 
-(b) -x Bash 運算子
+  * (b) -x Bash 運算子
 
-檢查此路徑是否存在。
+    檢查此路徑是否存在。
 
-Script 2
+* Script 2
 
 	#! /bin/bash
 
@@ -81,14 +81,21 @@ Script 2
 
 	exit 0
 	
-Syntax
+* Syntax
 
-(c) 變數切割法 $? 
+  * (c) 變數切割法 $? 
 
-此為正規表示法，即第一字元，如 -c1
+   此為正規表示法，即第一字元，如 -c1
 
+  * (d) 變數切割方法 #
 
-Execution Scripts
+   用來刪除符合比對模板的第一組實體。
+
+  * (e) 變數擷取方法 %
+
+   符合比對模板的內容之後遺留下來的結果。
+
+* Execution Scripts
 
 Before Execution, plz add absolute path in env var
 and execute the shell script in this way...
