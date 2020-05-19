@@ -93,9 +93,11 @@
 
           符合比對模板的內容之後遺留下來的結果。
    
-  * (f) -ne
+  * (f) -ne or -eq
   
-	     (to be continued...)
+	     -n means not equal
+
+	     -eq means equal
 
 * Execution Scripts
 
