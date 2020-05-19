@@ -67,7 +67,7 @@
 
 		#! /bin/bash
 
-		if [ $# -n 1]; then
+		if [ $# -ne 1]; then  # (d) # (f)
 		 echo "" > &2
 		   exit  1
 		fi
@@ -94,6 +94,8 @@
   * (e) 變數擷取方法 %
 
    符合比對模板的內容之後遺留下來的結果。
+   
+  * (f) 
 
 * Execution Scripts
 
