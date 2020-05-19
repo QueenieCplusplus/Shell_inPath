@@ -38,7 +38,7 @@ Script
 	 var=$1
 	 if [ "$var" != ""] ; then
 	    if [ "${var:0:1}" = "/" ] ; then  # (a)
-		if [ ! -x $var ] ; then
+		if [ ! -x $var ] ; then  # (b)
 		  return 1
 	        fi
 	    elif ! in_path $var "PATH" ; then
@@ -54,5 +54,9 @@ Syntax
 判斷第一字元是否為 /
 
 此為從字串中取得子字串的一種簡寫方法，並且從指定的位移值開始取得指定長度的字元，如未指定限制長度，即回傳位移值後的所有字元。
+
+(b) -x Bash 運算子
+
+檢查此路徑是否存在。
 
 (to be continued...)
