@@ -76,5 +76,11 @@ Script 2
 	esac
 
 	exit 0
+	
+Before Execution, plz add absolute path in env var
+and execute the shell script in this way...
+
+	$ inpath echo
+	echo 存在於路徑清單中
 
 (to be continued...)
