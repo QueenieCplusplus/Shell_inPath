@@ -33,7 +33,7 @@
 
 		  for dir in '$path'
 		  do
-		   if [ -x $dir/$cmd] ; then
+		   if [ -x $dir/$cmd ] ; then
 		     result=0 # valid means this program find out the cmd in path
 		   fi
 		  done
@@ -73,7 +73,7 @@
 
 		#! /bin/bash
 
-		if [ $# -ne 1]; then  # (d) # (f)
+		if [ $# -ne 1] ; then  # (d) # (f)
 		 echo "" > &2
 		   exit  1
 		fi
