@@ -11,7 +11,7 @@
 
 	  for dir in '$path'
           do
-           if [ -x $dir/$cmd] ; then
+           if [ -x $dir/$cmd ] ; then
              result=0 # valid means this program find out the cmd in path
            fi
 	  done
@@ -22,7 +22,7 @@
         check4_cmd_in_path()
 	{
 	 var=$1
-	 if [ "$var" != ""] ; then
+	 if [ "$var" != "" ] ; then
 	    if [ "${var:0:1}" = "/" ] ; then
 		if [ ! -x $var ] ; then
 		  return 1
