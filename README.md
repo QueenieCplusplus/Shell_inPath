@@ -6,7 +6,7 @@
   
      * touch < file_name > to create file
      
-     * open -e < file_name > to edit file
+     * open -e < file_name > to edit file , alternative way is vim < file_name >
      
      * .. < file_name > to reload file
 
