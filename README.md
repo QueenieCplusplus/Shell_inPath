@@ -9,6 +9,14 @@
      * open -e < file_name > to edit file , alternative way is vim < file_name >
      
      * .. < file_name > to reload file
+     
+* Common Variable:
+
+     * $n, such as $1, $2 means Arg1, Arg2 ... and so on.
+     
+     * $#, aggregate number of params passing thru script or function file.
+     
+     * $?, means return val or status from above function.
 
 * Script 1
 
